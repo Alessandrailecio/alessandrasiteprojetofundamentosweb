@@ -1,0 +1,150 @@
+/* Reset de estilos padrão do navegador */
+body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(170, 35, 175);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    height: 5vh;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s;
+}
+
+nav a.selected {
+    color:  rgb(227, 144, 248);
+}
+
+nav a:hover {
+    color: rgb(227, 144, 248);
+}
+
+section {
+    position: fixed;
+    margin-top: 7vh;
+    width: 80%;
+    margin-left: 10%;
+    height: 85vh;
+}
+
+section .title_div{
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; 
+    position: relative;
+    margin-top: 2vh;
+    
+}
+
+
+section .content {
+    position: relative;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 2%;
+    width: 96%;
+    height: 70vh;
+    display: flex;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5%;
+    padding: 2vh;
+    align-items: center;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e9d3e8; /* Cor de fundo desejada */
+    color: rgb(23, 18, 24); /* Cor do texto desejada */
+    padding: 5px; /* Espaçamento interno desejado */
+    height: 3vh;
+    font-size: 1.5vh; /* Tamanho da fonte com base na largura da tela */
+    padding-left: 1%;
+  }
+
+  address{
+    display: flex;
+  }
+
+.left-side {
+    position: relative;
+    width: 40%; /* Define a largura da coluna da imagem */
+    height: 50vh;
+    margin-left: 5%;
+    border-radius: 1%;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o espaço */
+    background-position: center; /* Centraliza a imagem na coluna */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+}
+
+.right-side {
+    position: relative;
+    width: 50%; /* Define a largura da coluna de texto */
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.right-side p{
+    text-align: center !important;
+    font-size: large;
+}
+
+.right-side a{
+    text-align: center !important;
+    font-size: large;
+}
+
+
+.full-width {
+    width: 100%; /* Define a largura da imagem como 100% */
+    object-fit: cover !important; /* Controla como a imagem se ajusta ao espaço */
+}
+
+.contact_container{
+    position: relative;
+    width: 50%; /* Define a largura da coluna de texto */
+    margin-left: 25%;
+    flex-direction: column; /* Empilhar os elementos verticalmente */
+    align-items: center; /* Centralizar horizontalmente */
+    text-align: center; /* Centralizar o texto no formulário */
+}
+
+.contact_container h1{
+    margin-bottom: 5%;
+}
+
